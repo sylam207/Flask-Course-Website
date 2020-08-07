@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCB20: Introduction to Databases and Web Applications</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename='css/lectures.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <header class = "header">
+        <a class = "logo" href = "/">CSCB20</a>
+        <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+        <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+        <ul class = "menu">
+               <li class = "btn1"> <a href = "/">Home</li></a>
+                    <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+                    <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+                    <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+                    <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+                    <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+                    <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+                    <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+                    <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+                    <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+                    <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+        </ul>
+    </span>
+</span>
+    </header>
+</head>
+<body>
+    <div class="container">
+        <div class="lectures" id="lec1">
+            <h2>Lecture 1</h2>
+            <p>Introduction, Databases background</p>
+            <ul>
+                <li>About the course</li>
+                <li>Relational models</li>
+                <li>Keys</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec2">
+            <h2>Lecture 2</h2>
+            <p>Schema Diagrams, Relational Algebra</p>
+            <ul>
+                <li>Relational diagrams</li>
+                <li>Relational operations</li>
+                <li>Relational algebra </li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec3">
+            <h2>Lecture 3</h2>
+            <p>SQL and MySQL</p>
+            <ul>
+                <li>Intro to SQL and MySQL</li>
+                <li>Mapping Relational Algebra to SQL queries</li>
+                <li>Creating tables</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec4">
+            <h2>Lecture 4</h2>
+            <p>Introduction, Databases background</p>
+            <ul>
+                <li>About the course</li>
+                <li>Relational models</li>
+                <li>Keys</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec5">
+            <h2>Lecture 5</h2>
+            <p>Schema Diagrams, Relational Algebra</p>
+            <ul>
+                <li>Relational diagrams</li>
+                <li>Relational operations</li>
+                <li>Relational algebra </li>
+            </ul>
+           <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec6">
+            <h2>Lecture 6</h2>
+            <p>SQL and MySQL</p>
+            <ul>
+                <li>Intro to SQL and MySQL</li>
+                <li>Mapping Relational Algebra to SQL queries</li>
+                <li>Creating tables</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="lectures" id="lec7">
+            <h2>Lecture 7</h2>
+            <p>Introduction, Databases background</p>
+            <ul>
+                <li>About the course</li>
+                <li>Relational models</li>
+                <li>Keys</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec8">
+            <h2>Lecture 8</h2>
+            <p>Schema Diagrams, Relational Algebra</p>
+            <ul>
+                <li>Relational diagrams</li>
+                <li>Relational operations</li>
+                <li>Relational algebra </li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec9">
+            <h2>Lecture 9</h2>
+            <p>SQL and MySQL</p>
+            <ul>
+                <li>Intro to SQL and MySQL</li>
+                <li>Mapping Relational Algebra to SQL queries</li>
+                <li>Creating tables</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec10">
+            <h2>Lecture 10</h2>
+            <p>Introduction, Databases background</p>
+            <ul>
+                <li>About the course</li>
+                <li>Relational models</li>
+                <li>Keys</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec11">
+            <h2>Lecture 11</h2>
+            <p>Schema Diagrams, Relational Algebra</p>
+            <ul>
+                <li>Relational diagrams</li>
+                <li>Relational operations</li>
+                <li>Relational algebra </li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+        <div class="lectures" id="lec12">
+            <h2>Lecture 12</h2>
+            <p>SQL and MySQL</p>
+            <ul>
+                <li>Intro to SQL and MySQL</li>
+                <li>Mapping Relational Algebra to SQL queries</li>
+                <li>Creating tables</li>
+            </ul>
+            <a href="/static/pdf/B20Week1.pdf" target="blank">
+                <button class="btn">Slides</button>
+            </a>
+            <a href="/static/pdf/B20Assignment2-2.pdf" target="blank">
+                <button class="btn">Handout</button>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div class = "footer">
+            <p class = "copyright">© Created by Si Yuen Lam and Azeemuddin Imad Mohammed</p>
+            <p class = "cs"> <a href = "https://web.cs.toronto.edu/contact-us/faculty-directory"> Faculty of Computer Science</a ></p >
+        </div>
+    </footer>
+</body>
+
+</html>

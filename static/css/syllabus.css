@@ -1,0 +1,207 @@
+/* menu */
+a {
+  color: #000;
+}
+
+.header {
+  background-color: black;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  margin-left: -10px;
+  margin-right: -5px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  /*border-right: 1px solid #f4f4f4;*/
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f4f4f4;
+}
+
+.header .menu-btn:hover {
+  background-position: right;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 40px;
+  padding-top: 5px;
+  padding-left: 100px;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color:  #0652DD
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #FFFFFF;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+  overflow: auto;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+@media (min-width: 105em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+iframe {
+  align-self: center;
+  width: 800px;
+  height: 750px;
+}
+
+.btn1:hover {
+background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312) 
+}
+.btn2:hover {
+  background-image: linear-gradient(to left, #8e44ad, #EE5A24,#8e44ad)
+}
+.btn3:hover {
+  background-image: linear-gradient(to left, #C4E538, #009432,#C4E538)
+}
+.btn4:hover {
+  background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4)
+}
+.btn5:hover {
+  background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF)
+}
+.btn6:hover {
+  background-image: linear-gradient(to left, #f1c40f, #1abc9c, #f1c40f)
+}
+.btn7:hover {
+  background-image: linear-gradient(to left, #2ecc71, #2980b9, #2ecc71)
+}
+.btn8:hover {
+  background-image: linear-gradient(to left, #c0392b, #3498db, #c0392b)
+}
+.btn9:hover {
+  background-image: linear-gradient(to left, #34495e,#95a5a6, #34495e)
+}
+.footer {
+  display: flex;
+}
+
+/* footer */
+.footer {
+  display: flex;
+}
+
+footer p {
+  padding-left: 10px;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.pinimg.com/originals/cd/c6/d3/cdc6d31594de6da0ae1eb2359e3d8ca5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 60px) {
+
+.element {
+  width: 230px;
+}
+
+.info {
+  font-size:15px;
+}
+
+}

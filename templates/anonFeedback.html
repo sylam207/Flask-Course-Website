@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback</title>
+  <link rel = "stylesheet" href = "{{url_for('static', filename='css/anonFeedBack.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <header class = "header">
+    <a class = "logo" href = "/">CSCB20</a>
+    <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+    <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+    <ul class = "menu">
+           <li class = "btn1"> <a href = "/">Home</li></a>
+            <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+            <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+            <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+            <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+            <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+            <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+            <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+            <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+            <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+            <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+    </ul>
+</span>
+</span>
+</header>
+</head>
+<body>
+  <h1>Instuctors</h1>
+  <div class="Table">
+    <div class="TableRow">
+    <div class="TableHead"><strong>Sid</strong></div>
+    <div class="TableHead"><strong>First Name</strong></div>
+    <div class="TableHead"><strong>Last Name</strong></div>
+    </div>
+    {% for item in instructor %}
+    <div class="TableRow">
+    <div class="TableCell">{{ item['Sid'] }}</div>
+    <div class="TableCell">{{ item['FirstName'] }}</div>
+    <div class="TableCell">{{ item['LastName'] }}</div>
+    </div>
+      {% endfor %}
+    </div>
+  <br>
+  <h2>Anonymous Feedback</h2>
+
+  <form action="/anonFeedback" method="POST">
+    <p class = "p">Enter the Sid for the instructor this feedback is for:</p>
+    <textarea name="Sidmsg" rows="5" cols="5"></textarea>
+    <br><br>
+
+    <p class = "p">Q1.What do you like about the instructor teaching?</p>
+    <textarea name="message1" rows="10" cols="30"></textarea>
+    <br><br>
+
+    <p class = "p">Q2.What do you recommend the instructor to do to improve their teaching?</p>
+    <textarea name="message2" rows="10" cols="30"></textarea>
+    <br><br>
+
+    <p class = "p">Q3.What do you like about the labs?</p>
+    <textarea name="message3" rows="10" cols="30"></textarea>
+    <br><br>
+
+    <p class = "p">Q4.What do you recommend the lab instructor to do to improve their lab teaching?</p>
+    <textarea name="message4" rows="10" cols="30"></textarea>
+    <br><br>
+
+    <input type="submit" class = "btn">
+  </form>
+</body>
+</html>

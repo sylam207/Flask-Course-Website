@@ -1,0 +1,76 @@
+body h1 {
+    padding-top: 0px;
+    font-family: 'Ubantu', sans-serif;
+    color: #0652DD;
+    font-size: 36px;
+    padding-left: 425px;
+}
+
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/cd/c6/d3/cdc6d31594de6da0ae1eb2359e3d8ca5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Button */
+.btn{
+	width: 50%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+	background-size: 100%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover{
+	background-position: right;
+}
+
+/* Make-do Table */
+
+/* Inspiration from https://html-cleaner.com/features/replace-html-table-tags-with-divs/ */
+
+.Table {
+    display: table;
+    width: 100%;
+ }
+ .TableRow {
+    display: table-row;
+ }
+ .TableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+ }
+ .TableCell, .TableHead {
+    display: table-cell;
+    padding: 3px 10px;
+    font-family: 'Ubantu', sans-serif;
+    border: 1px solid #dd6969;
+ }
+ .TableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+    font-weight: bold;
+ }
+ .TableFoot {
+    display: table-footer-group;
+    font-weight: bold;
+    background-color: #ddd;
+ }
+ .TableBody {
+    display: table-row-group;
+ }

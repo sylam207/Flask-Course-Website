@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCB20: Introduction to Databases and Web Applications</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename='css/lab.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <header class = "header">
+        <a class = "logo" href = "/">CSCB20</a>
+        <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+        <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+        <ul class = "menu">
+               <li class = "btn1"> <a href = "/">Home</li></a>
+                    <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+                    <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+                    <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+                    <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+                    <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+                    <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+                    <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+                    <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+                    <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+                    <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+        </ul>
+    </span>
+</span>
+    </header>
+</head>
+<body>
+    <div class="container">
+        <div class="lab" id="lab1">
+            <h2>Week 2</h2>
+            <h4>Topic</h4>
+            <p>Python and command line</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Refresher on Python</li>
+                <li>Setting up IDE</li>
+                <li>Command line</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+        <div class="lab" id="lab2">
+            <h2>Week 3</h2>
+            <h4>Topic</h4>
+            <p>Relational Algebra</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Primary keys</li>
+                <li>Foreign keys</li>
+                <li>Queries</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+        
+        <div class="lab" id="lab3">
+            <h2>Week 4</h2>
+            <h4>Topic</h4>
+            <p>Intro to the mySQL</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Installing</li>
+                <li>Basic commands</li>
+                <li>Sql queries</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="lab" id="lab4">
+            <h2>Week 5</h2>
+            <h4>Topic</h4>
+            <p> Creating and Updating Tables</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Insert</li>
+                <li>Update</li>
+                <li>Universal tables</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+        <div class="lab" id="lab5">
+            <h2>Week 6</h2>
+            <h4>Topic</h4>
+            <p>Views and Joins</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>View</li>
+                <li>Left and right join</li>
+                <li>Concat</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+        <div class="lab" id="lab7">
+            <h2>Week 7</h2>
+            <h4>Topic</h4>
+            <p>Intro to making a webpage</p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Headers</li>
+                <li>Inseting images</li>
+                <li>Css</li>
+            </ul>
+            <a href="/static/pdf/B20Assignment1Winter2020.pdf" target="blank">
+                <button class="btn">Download</button>
+            </a>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class = "footer">
+        <p class = "copyright">© Created by Si Yuen Lam and Azeemuddin Imad Mohammed</p>
+        <p class = "cs"> <a href = "https://web.cs.toronto.edu/contact-us/faculty-directory"> Faculty of Computer Science</a ></p >
+    </div>
+</footer>
+
+</html>

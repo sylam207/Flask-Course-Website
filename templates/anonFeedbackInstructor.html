@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback</title>
+  <link rel = "stylesheet" href = "{{url_for('static', filename='css/anonFeedbackInstructor.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <header class = "header">
+    <a class = "logo" href = "/">CSCB20</a>
+    <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+    <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+    <ul class = "menu">
+           <li class = "btn1"> <a href = "/">Home</li></a>
+            <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+            <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+            <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+            <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+            <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+            <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+            <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+            <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+            <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+            <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+    </ul>
+</span>
+</span>
+</header>
+</head>
+<body>
+  <h1>Anon Feedback</h1>
+  <div class="Table">
+    <div class="TableRow">
+    <div class="TableHead"><strong>Sid</strong></div>
+    <div class="TableHead"><strong>Q1</strong></div>
+    <div class="TableHead"><strong>Q2</strong></div>
+    <div class="TableHead"><strong>Q3</strong></div>
+    <div class="TableHead"><strong>Q4</strong></div>
+    </div>
+    {% for item in instructor %}
+    <div class="TableRow">
+    <div class="TableCell">{{ item['Sid'] }}</div>
+    <div class="TableCell">{{ item['Q1'] }}</div>
+    <div class="TableCell">{{ item['Q2'] }}</div>
+    <div class="TableCell">{{ item['Q3'] }}</div>
+    <div class="TableCell">{{ item['Q4'] }}</div>
+    </div>
+      {% endfor %}
+    </div>
+    {% block content %}
+		  {% with messages = get_flashed_messages() %}
+				{% if messages %}
+					  {% for msg in messages %}
+  					    <p>{{msg}}</p>
+					  {% endfor %}
+				{% endif %}
+		 	{% endwith %}	
+		{% endblock %}
+</body>
+</html>

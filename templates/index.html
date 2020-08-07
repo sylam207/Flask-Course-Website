@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSCB20: Introduction to Databases and Web Applications</title>
+        <link rel = "stylesheet" href = "{{url_for('static', filename='css/index.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <header class = "header">
+            <a class = "logo" href = "/">CSCB20</a>
+            <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+            <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+            <ul class = "menu">
+                   <li class = "btn1"> <a href = "/">Home</li></a>
+                    <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+                    <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+                    <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+                    <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+                    <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+                    <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+                    <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+                    <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+                    <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+                    <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+            </ul>
+        </span>
+    </span>
+        </header>
+    </head>
+
+
+<body>
+
+    <h1> Welcome to CSCB20!</h1>
+    <div class = "box0">
+        <h2>Introduction to Databases and Web Applications</h2>
+    </div>
+    <div class= "box">
+        <p class = "course"> <b>Course Description</b>
+    </div>
+
+
+        <div class = "box2">
+        
+            <p class = "description"> A practical introduction to databases and Web app development. 
+             Databases: terminology and applications; creating, querying and updating databases;
+             the entity-relationship model for database design. Web documents and applications: 
+             static and interactive documents; Web servers and dynamic server-generated content; 
+             Web application development and interface with databases. </p>
+
+        </div>
+  
+
+        <div class = "box3">
+         <p class = "instructor">Instructor</p>
+         <p class = "instructor">Abbas Attarwala</p>
+         <p class = "instructor">Office: IC 349</p>
+         <p class = "instructor">Lectures: Monday 9 - 11 AM SY 110</p>
+        </div>
+
+        <iframe class = "gcal" src="https://calendar.google.com/calendar/embed?src=07js989maqpb9le0ussgcu6qq8%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+    <!-- footer -->
+    <footer>
+        <div class = "footer">
+            <p class = "copyright">© Created by Si Yuen Lam and Azeemuddin Imad Mohammed</p>
+            <p class = "cs"> <a href = "https://web.cs.toronto.edu/contact-us/faculty-directory"> Faculty of Computer Science</a ></p >
+        </div>
+</footer>
+
+</body>
+</html>

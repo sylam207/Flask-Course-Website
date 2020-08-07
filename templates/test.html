@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Database</title>
+  <link rel = "stylesheet" href = "{{url_for('static', filename='css/test.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <header class = "header">
+    <a class = "logo" href = "/">CSCB20</a>
+    <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+    <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+    <ul class = "menu">
+           <li class = "btn1"> <a href = "/">Home</li></a>
+            <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+            <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+            <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+            <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+            <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+            <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+            <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+            <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+            <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+            <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+    </ul>
+</span>
+</span>
+</header>
+</head>
+<body>
+  <h1>Student Grades</h1>
+  <div class="Table">
+<div class="TableRow">
+<div class="TableHead"><strong>StudentID</strong></div>
+<div class="TableHead"><strong>A1</strong></div>
+<div class="TableHead"><strong>A2</strong></div>
+<div class="TableHead"><strong>A3</strong></div>
+<div class="TableHead"><strong>Midterm</strong></div>
+<div class="TableHead"><strong>Final</strong></div>
+</div>
+{% for item in student %}
+<div class="TableRow">
+<div class="TableCell">{{ item['StudentID'] }}</div>
+<div class="TableCell">{{ item['A1'] }}</div>
+<div class="TableCell">{{ item['A2'] }}</div>
+<div class="TableCell">{{ item['A3'] }}</div>
+<div class="TableCell">{{ item['Midterm'] }}</div>
+<div class="TableCell">{{ item['Final'] }}</div>
+</div>
+  {% endfor %}
+</div>
+  <br>
+  <form action="/studentGradeChange" method="POST">
+    <input id="input-box" type="text" name="StudentID" placeholder="enter a StudentID to search for">
+    <input type="submit" name="submit-button" class = "btn" value="submit">
+  </form>
+</body>
+</html>

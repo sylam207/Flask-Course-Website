@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCB20: Introduction to Databases and Web Applications</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename='css/team.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <header class = "header">
+        <a class = "logo" href = "/">CSCB20</a>
+        <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+        <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+        <ul class = "menu">
+              <li class = "btn1"> <a href = "/">Home</li></a>
+                    <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+                    <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+                    <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+                    <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+                    <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+                    <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+                    <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+                    <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+                    <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+                    <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+        </ul>
+    </span>
+</span>
+    </header>
+</head>
+
+<body>
+    <h1>Course Team</h1>
+
+    <div class = "container">
+
+        <div class = "box-one">
+
+            <div class = "element" id = "prof">
+                <img src = "https://www.bu.edu/cs/files/2017/05/Abbas.jpg" width="330" height = "375">
+                <div class = "info">
+                    <h2>Abbas Attarwala</h2>
+                    <h3>Professor</h3>
+                    <p><strong>Email: abbas.attatwala@utoronto.ca</strong></p>
+                    <p><strong>Office: IC 349</strong></p>
+                    <p><strong>Office Hours: Mon 11:30 AM - 2 PM</strong></p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class = "element">
+                <img src = "https://images-na.ssl-images-amazon.com/images/I/71AzvJBjE2L._AC_SL1500_.jpg" width="330" height = "375">
+                <div class = "info" id = "ta1">
+                    <h2>Brian Lam</h2>
+                    <h3>Teaching Assistent</h3>
+                    <p><strong>Email: brian.lam@mail.utoronto.ca</strong></p>
+                    <p><strong>Office: IC400A</strong></p>
+                    <p><strong>Office Hours: Tues 9 AM - 11 AM</strong></p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class = "element">
+                    <img src = "https://images-na.ssl-images-amazon.com/images/I/616Iza%2BtaEL._AC_SL1500_.jpg" width="330" height = "375">
+                    <div class = "info" id = "ta2">
+                        <h2>Kevin Zhang</h2>
+                        <h3>Teaching Assistent</h3>
+                        <p><strong>Email: kevin.zhang@mail.utoronto.ca</strong></p>
+                        <p><strong>Office: IC400A</strong></p>
+                        <p><strong>Office Hours: Thurs 6 PM - 8 PM</strong></p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+
+
+        <div class = "box-two">
+            
+
+             <div class = "element">
+                    <img src = "https://images-na.ssl-images-amazon.com/images/I/610BJz4hByL._AC_SX425_.jpg" width="330" height = "375">
+                        <div class = "info" id = "ta2">
+                            <h2>Frederic Pun</h2>
+                            <h3>Teaching Assistent</h3>
+                            <p><strong>Email: frederic.pun@mail.utoronto.ca</strong></p>
+                            <p><strong>Office: IC402</strong></p>
+                            <p><strong>Office Hours: Thurs 12 PM - 1 PM</strong></p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+
+            <div class = "element">
+                    <img src = "https://images-na.ssl-images-amazon.com/images/I/716bn1lV1tL._AC_SX466_.jpg" width="330" height = "375">
+                     <div class = "info" id = "ta2">
+                        <h2>Sakina Shabbir</h2>
+                        <h3>Teaching Assistent</h3>
+                        <p><strong>Email: sakina.shabbir@mail.utoronto.ca</strong></p>
+                        <p><strong>Office: IC402</strong></p>
+                        <p><strong>Office Hours: Thurs 1 PM - 2 PM</strong></p>
+                        <br>
+                        <br>
+                        </div>
+                    </div>  
+            
+
+            <div class = "element">
+                    <img src = "https://images-na.ssl-images-amazon.com/images/I/71Hf6vFPcxL._AC_SL1500_.jpg" width="330" height = "375">
+                    <div class = "info" id = "ta2">
+                        <h2>Dharmik Shah</h2>
+                        <h3>Teaching Assistent</h3>
+                        <p><strong>Email: dharmik.shah@mail.utoronto.ca</strong></p>
+                        <p><strong>Office: IC402</strong></p>
+                        <p><strong>Office Hours: Thurs 6 PM - 8 PM</strong></p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+        </div>
+
+        <div class = "box-three">
+               
+            <div class = "element">
+                    <img src = "https://images-na.ssl-images-amazon.com/images/I/71sbR-Ef3xL._AC_SL1500_.jpg" width="330" height = "375">
+                        <div class = "info" id = "ta2">
+                            <h2>Vidya Anada</h2>
+                            <h3>Teaching Assistent</h3>
+                            <p><strong>Email: vidya.anada@mail.utoronto.ca</strong></p>
+                            <p><strong>Office: IC402</strong></p>
+                            <p><strong>Office Hours: Tues 2 PM - 4 PM</strong></p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+        </div>       
+    </div> 
+
+
+    <footer>
+            <div class = "footer">
+                <p class = "copyright">© Created by Si Yuen Lam and Azeemuddin Imad Mohammed</p>
+                <p class = "cs"> <a href = "https://web.cs.toronto.edu/contact-us/faculty-directory"> Faculty of Computer Science</a ></p >
+            </div>
+    </footer>
+</body>
+
+</html>

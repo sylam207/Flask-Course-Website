@@ -1,0 +1,269 @@
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #800080;
+}
+
+
+body h1 {
+    position: relative;
+    top: 60px;
+    padding-top: 40px;
+    font-family: 'Ubantu', sans-serif;
+    color: #0652DD;
+    font-size: 40px;
+    padding-left: 425px;
+}
+
+
+
+/* menu */
+a {
+    color: #000;
+  }
+
+.header {
+    background-color: black;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #f4f4f4;
+}
+  
+.header .menu-btn:hover {
+    background-position: right;
+}
+  
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 100px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color:  #0652DD
+  }
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+  
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #FFFFFF;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+.header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+.header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu button */
+  
+.header .menu-btn {
+    display: none;
+  }
+  
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    overflow: auto;
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+  
+  
+@media (min-width: 105em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+.btn1:hover {
+    background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312) 
+}
+
+.btn2:hover {
+    background-image: linear-gradient(to left, #8e44ad, #EE5A24,#8e44ad)
+}
+.btn3:hover {
+    background-image: linear-gradient(to left, #C4E538, #009432,#C4E538)
+}
+.btn4:hover {
+    background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4)
+}
+.btn5:hover {
+    background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF)
+}
+.btn6:hover {
+    background-image: linear-gradient(to left, #f1c40f, #1abc9c, #f1c40f)
+}
+.btn7:hover {
+    background-image: linear-gradient(to left, #2ecc71, #2980b9, #2ecc71)
+}
+.btn8:hover {
+    background-image: linear-gradient(to left, #c0392b, #3498db, #c0392b)
+}
+.btn9:hover {
+    background-image: linear-gradient(to left, #34495e,#95a5a6, #34495e)
+}
+
+
+body h1 {
+    padding-top: 0px;
+    font-family: 'Ubantu', sans-serif;
+    color: #0652DD;
+    font-size: 36px;
+    padding-left: 425px;
+}
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/cd/c6/d3/cdc6d31594de6da0ae1eb2359e3d8ca5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Button */
+.btn{
+	width: 50%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+	background-size: 100%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover{
+	background-position: right;
+}
+
+/* Make-do Table */
+
+/* Inspiration from https://html-cleaner.com/features/replace-html-table-tags-with-divs/ */
+
+.Table {
+    display: table;
+    margin-top: 100px;
+    width: 100%;
+ }
+ .TableRow {
+    display: table-row;
+ }
+ .TableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+ }
+ .TableCell, .TableHead {
+    display: table-cell;
+    padding: 3px 10px;
+    font-family: 'Ubantu', sans-serif;
+    border: 1px solid #dd6969;
+ }
+ .TableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+    font-weight: bold;
+ }
+ .TableFoot {
+    display: table-footer-group;
+    font-weight: bold;
+    background-color: #ddd;
+ }
+ .TableBody {
+    display: table-row-group;
+ }

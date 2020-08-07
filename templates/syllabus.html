@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCB20: Introduction to Databases and Web Applications</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename='css/syllabus.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <header class = "header">
+       <a class = "logo" href = "/">CSCB20</a>
+        <input class = "menu-btn" type = "checkbox" id = "menu-btn">
+        <label class = "menu-icon" for = "menu-btn"><span class = "navicon"></span></label>
+        <ul class = "menu">
+               <li class = "btn1"> <a href = "/">Home</li></a>
+                    <li class = "btn2"><a href = "{{url_for('syllabus')}}">Syllabus</li></a>
+                    <li class = "btn3"><a href = "{{url_for('labs')}}">Labs</li></a>
+                    <li class = "btn4"><a href = "{{url_for('lectures')}}">Lectures</li></a>
+                    <li class = "btn6"><a href = "{{url_for('team')}}">Course Team</li></a>
+                    <li class = "btn9"><a href = "{{url_for('Grades')}}">Grades</li></a>
+                    <li class = "btn9"><a href = "{{url_for('remarkRequest')}}">Remark Requests</li></a>
+                    <li class = "btn7"><a href = "https://piazza.com/class/k5l8ww7kz8l6f0">Piazza</li></a>
+                    <li class = "btn8"><a href = "https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</li></a>
+                    <li class = "btn9"><a href = "{{url_for('anonFeedback')}}">Anon Feedback</li></a>
+                    <li class = "btn9"><a href = "{{url_for('logout')}}">Logout</li></a>
+        </ul>
+    </span>
+</span>
+    </header>
+</head>
+<body>
+    <iframe src="{{url_for('static', filename='pdf/B20CourseSyllabus.pdf')}}"
+    frameborder="0"
+    scrolling="no">
+    </iframe>
+</body>
+<footer>
+    <div class = "footer">
+        <p class = "copyright">© Created by Si Yuen Lam and Azeemuddin Imad Mohammed</p>
+        <p class = "cs"> <a href = "https://web.cs.toronto.edu/contact-us/faculty-directory"> Faculty of Computer Science</a ></p >
+    </div>
+</footer>
+
+</html>
